@@ -1,5 +1,4 @@
-const webDomain = 'http://option.xingfuqihuo.com'
-// const webDomain = 'http://192.168.11.11:8080'
+const webDomain = 'http://www.***.com'
 
 module.exports = {
   proxyList: { // 跨域请求
