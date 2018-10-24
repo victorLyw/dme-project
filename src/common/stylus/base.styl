@@ -1,0 +1,89 @@
+@import "variable.styl"
+
+body, html
+  line-height: 1
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback'
+  user-select: none
+  -webkit-tap-highlight-color: transparent
+  background: $color-background
+  color: $color-text
+
+input
+  width 100%
+  height $height-input
+  line-height $height-input
+  background-color $color-background-fg
+  color $color-text
+  text-indent 10px
+
+:-moz-placeholder /* Mozilla Firefox 4 to 18 */
+  color $txt-color-placeholder
+
+::-moz-placeholder /* Mozilla Firefox 19+ */
+  color $txt-color-placeholder
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder
+  color $txt-color-placeholder
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder
+  color $txt-color-placeholder
+
+button
+  border 0
+  outline none
+  position relative
+  display block
+  margin 0 auto
+  padding 0 14px
+  box-sizing border-box
+  font-size $font-size-large
+  text-align center
+  text-decoration none
+  color #000
+  background-color #f8f8f8
+  line-height 2.55555556
+  overflow hidden
+  &:after
+    content " "
+    width 200%
+    height 200%
+    position absolute
+    top 0
+    left 0
+    border 1px solid rgba(0,0,0,.2)
+    transform scale(.5)
+    transform-origin 0 0
+    box-sizing border-box
+    border-radius 10px
+.xftz-main
+  padding 20px
+  box-sizing border-box
+.xftz-txt-danger
+  color $txt-color-danger
+.xftz-txt-warn
+  color $txt-color-warn
+.xftz-txt-primary
+  color $txt-color-primary
+.xftz-txt-info
+  color $txt-color-info
+.xftz-txt-success
+  color $txt-color-success
+/* 自定义组件 */
+.xftz-flex
+  display flex
+  .xftz-flex__item
+    flex 1 1 0%
+    .placeholder
+      text-align center
+/* 修改组件样式 */
+.weui-toast
+  background $color-background-weui-toast
+  padding-left 5px
+  padding-right 5px
+  box-shadow 0 0 8px 0 rgba(255,255,255,.5)
+  .weui-icon_toast
+    margin 22px 0 10px
+.weui-dialog__title
+  color #f66
